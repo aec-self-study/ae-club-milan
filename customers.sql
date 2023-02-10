@@ -1,2 +1,2 @@
 select * from `analytics-engineers-club.coffee_shop.customers`
-limit 100;
+limit 2220;
