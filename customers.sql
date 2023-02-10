@@ -1,2 +1,3 @@
 select * from `analytics-engineers-club.coffee_shop.customers`
-limit 100;
+Some bad SQL
+limit 9000;
