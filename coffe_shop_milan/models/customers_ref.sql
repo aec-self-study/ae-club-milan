@@ -1,3 +1,3 @@
 Select *
-from {{ ref ('customers') }}
+from {{ source('coffee_shop', 'customers') }}
 
