@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: web_tracking
+    project: analytics-engineers-club
+    tables:
+      - name: pageviews
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+        description: "The source of this table"
+        tests:
+          - unique
+
+
+models:
+  - name: pageviews
+    description: "All rows of data from the `analytics-engineers-club.web_tracking.pageviews` table"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
