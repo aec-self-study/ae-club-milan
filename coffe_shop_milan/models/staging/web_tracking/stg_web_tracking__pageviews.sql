@@ -2,4 +2,4 @@
     materialized='table'
  ) }}
 
-select * from `analytics-engineers-club.web_tracking.pageviews`
+select * from {{source('web_tracking','pageviews')}}
