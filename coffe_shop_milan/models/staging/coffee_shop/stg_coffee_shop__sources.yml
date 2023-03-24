@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+  - name: customers
+    description: "All rows of data from the `analytics-engineers-club.coffee_shop.customers` table"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+
+sources:
+  - name: coffee_shop
+    project: analytics-engineers-club
+    tables:
+      - name: customers
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+        description: "The source of this table"
+        tests:
+          - unique
+    
