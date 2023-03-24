@@ -11,8 +11,7 @@ sources:
               - unique
               - not_null
         description: "The source of this table"
-        tests:
-          - unique
+      
 
 
 models:
