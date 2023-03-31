@@ -18,6 +18,10 @@ models:
           upper_bound_column: ended_at
           partition_by: product_id
           gaps: not_allowed
+    columns:
+      - name: price
+        tests:
+          - is_positive
 
 sources:
   - name: coffee_shop
@@ -30,5 +34,5 @@ sources:
               - unique
              
         description: "The source of this table"
-        
+  
     
